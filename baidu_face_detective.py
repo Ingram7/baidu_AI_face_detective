@@ -53,8 +53,8 @@ def process_face_data(r):
 
 if __name__ == '__main__':
     # 百度AI 申请信息   API Key, Secret Key
-    API_KEY = "xKyCOwVbU9Un7WDdyvEa3ttB"
-    SECRET_KEY = "NgImdvGV7ldd72ivnvHvddHrpFsFjWYe"
+    API_KEY = "xKyCOwVbU9Un7***************"
+    SECRET_KEY = "NgImdvGV7ldd7****************"
 
 
     file_path = 'image'
