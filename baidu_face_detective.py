@@ -67,11 +67,12 @@ if __name__ == '__main__':
             token = get_token(API_KEY, SECRET_KEY)
             data = face_detective(image_path, token)
             result = process_face_data(data)
+            result = int(result)
 
-            if result :
-                os.rename(image_path, os.path.join(file_path, str(int(result)) + 'II' + image_name_one))
+            if result:
+                os.rename(image_path, os.path.join(file_path, str(result) + 'II' + image_name_one))
             else:
                 os.remove(image_path)
 
-        except:
-            print("......")
+        except Exception as e:
+            print('Error:', e)
